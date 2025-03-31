@@ -39,4 +39,5 @@ jobs:
       - name: Publish
         env:
           GITHUB_TOKEN: ${{ secrets.PACKAGE_ACCESS_TOKEN }}
+          STRIPE_TEST_SECRET_KEY: ${{ secrets.STRIPE_TEST_SECRET_KEY }}
         run: sbt clean test publish
