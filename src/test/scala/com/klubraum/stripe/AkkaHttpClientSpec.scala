@@ -14,7 +14,6 @@ import org.scalatest.wordspec.AnyWordSpec
 import scala.concurrent.Await
 import scala.concurrent.duration.*
 import scala.language.postfixOps
-import scala.util.Try
 
 class AkkaHttpClientSpec extends AnyWordSpec with Matchers with BeforeAndAfterAll {
 
