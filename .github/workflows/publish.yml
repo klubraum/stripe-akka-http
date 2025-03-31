@@ -34,8 +34,9 @@ jobs:
         uses: coursier/setup-action@v1.3.0
         with:
           jvm: temurin:1.21
+          apps: sbt
 
       - name: Publish
         env:
           GITHUB_TOKEN: ${{ secrets.PACKAGE_ACCESS_TOKEN }}
-        run: sbtn clean test publish
+        run: sbt clean test publish
