@@ -1,7 +1,8 @@
 name := "stripe-akka-http"
 
-ThisBuild / scalaVersion := "3.3.5"
-ThisBuild / organization := "com.klubraum"
+organization := "com.klubraum"
+
+scalaVersion := "3.3.5"
 
 credentials += Credentials("GitHub Package Registry", "maven.pkg.github.com", "klubraum", System.getenv("GITHUB_TOKEN"))
 
@@ -12,6 +13,8 @@ githubRepository := "stripe-akka-http"
 
 Compile / scalacOptions ++= Seq("-release:17", "-deprecation", "-feature", "-unchecked")
 Compile / javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
+
+ThisBuild / dynverSeparator := "-"
 
 val AkkaVersion = "2.10.2"
 val AkkaHttpVersion = "10.7.0"
