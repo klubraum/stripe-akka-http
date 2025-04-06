@@ -19,11 +19,11 @@ ThisBuild / dynverSeparator := "-"
 val AkkaVersion = "2.10.2"
 val AkkaHttpVersion = "10.7.0"
 
-val StripeJavaVersion = "28.4.0"
+val StripeJavaVersion = "29.0.0"
 
 libraryDependencies ++= Seq(
   // Stripe SDK
-  "com.stripe" % "stripe-java" % "28.4.0", // As requested
+  "com.stripe" % "stripe-java" % StripeJavaVersion,
 
   "com.typesafe.akka" %% "akka-http" % AkkaHttpVersion,
   "com.typesafe.akka" %% "akka-actor-typed" % AkkaVersion,
